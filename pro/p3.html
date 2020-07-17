@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كلاب</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+
+
+ .dog{ background-image: url(../pic.png/dodo.png);
+  background-repeat: no-repeat; 
+height: 425px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+background-attachment: fixed;
+}
+
+
+
+
+
+
+
+.flip-card,.flip-card-2,.flip-card-3{
+  background-color: transparent;
+  display: flexbox;
+  flex-direction: row;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+    ;}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cont">
+    <div style="display: flex;background-color: #eae2b7;" class="header">
+
+
+      <div style="display: flex;align-items: center;"><img class="logo" src="../pic.png/logo.png" alt=""></div> 
+     
+       <div style="display: flex;">
+         <div class="wrap">
+             <div class="search">
+                <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+               </button>
+             </div>
+          </div>
+           <ul class="links">
+             <li><a href=""><span>مدونه</span> </a></li>
+             <li><a href="../pro/p4.html"><span>قطط</span> </a></li>
+             <li><a href="../pro/p3.html"><span>كلاب</span></a></li>
+             <li><a href="../pro/p2.html"><span>خدمات</span></a></li>
+             <li><a href="../pro/p1.html"><span>الرئيسيه</span> </a></li>
+               
+             
+         </ul>
+     </div>
+ </div>
+ <div class="dog">
+  <div style=" font-size:75px;font-weight: 600; margin-top: 100px;">كل ما تحتاجه لكلبك </div>
+</div>
+<img src="../pic.png/roro2.png" alt="">
+<div class="portfolio-area">
+
+
+ <div>
+  <div style="text-align: center;font-size: 40px;font-weight: 600;background-color: #fda62c;"> افضل متجر للكلاب</div>
+    <div class="row"  style="height: 400px;">
+     
+      <div class="col-md-4">
+        <div class="single-portfolio"  >
+          <img src="../pic.png/og-logo.png" alt="" class="portfolio-img" width="500px">
+          <div class="portfolio-text">
+            <h3>PET ZONE</h3>
+           <a href="https://petzone.com/kuwait/home/" style="text-decoration: none;"><p>اضغط لزياره موقعهم<p></a> 
+          </div>
+        </div>
+      </div>
+     
+  
+    </div>
+
+  </div>
+
+</div>
+<img src="../pic.png/roro.png" alt="">
+<!--<div style="background-color: #f8961e;height: 200px;"><?xml version="1.0" encoding="utf-8"?>
+  <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  
+  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="1348.5px" height="305.812px" viewBox="0 0 1368 305.812" enable-background="new 0 0 1368 305.812" xml:space="preserve">
+  <path fill="#FFFFFF" d="M-45.004,86.944c0,0,294.358,231.281,883.075,81.099c588.717-150.183,705.86,33.04,705.86,33.04V-51.224
+    H-45.004V86.944z"/>
+  </svg>
+  </div>--> 
+<div style="text-align: center;font-weight: 500;font-size: 30px;margin: 20px;">افضل شركات الاطعمه</div>
+<div style="display: flex;flex-direction: row;justify-content: space-around;height: 400px;align-items: center;" >
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="../pic.png/gimdog_brand_logo_banner_1.png" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>GIMDOG</h1> 
+      <p>لكل المستلزمات الغذائيه</p> 
+     <a href="https://www.gimdog.info/en/" style="text-decoration: none;color: black;"> <p>اضغطوا لزياره موقعهم</p></a>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="../pic.png/Walkin-Wheels-2017.png" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>WALKIN WHEELS</h1> 
+      <p> لمستلزمات الكلاب المعاقه </p> 
+     <a href="https://walkinwheels.com/" style="text-decoration: none;color: black;"> <p>اضغطوا لزياره موقعهم</p></a>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="../pic.png/23.png" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>NUPRO</h1> 
+      <p>لكل المستلزمات الغذائيه</p> 
+     <a href="https://www.nuprosupplements.com/" style="text-decoration: none;color: black;"> <p>اضغطوا لزياره موقعهم</p></a>
+    </div>
+  </div>
+</div>
+</div>
+<!--<div class="demo">
+  <div class="carousel__container">
+    <div class="carousel__slide">
+      <div class="carousel__item carousel__item--cloned">
+        <img src="https://drive.google.com/uc?id=1H4VY26ahympGRMMvITX0Vx1P8EnDZvAV" alt="">
+      </div>
+      <div class="carousel__item">
+        <img src="https://drive.google.com/uc?id=1frPDYjWJaOu2gs0nYXavljqiLyBomvsO" alt="">
+      </div>
+      <div class="carousel__item">
+        <img src="https://drive.google.com/uc?id=1dPd-C01BUcDZ3zVUppt4VHWvfDuk1XSL" alt="">
+      </div>
+      <div class="carousel__item">
+        <img src="https://drive.google.com/uc?id=1N3-6CC7wm-Ek6_qfiCTWgmgc0YCW6YGB" alt="">
+      </div>
+      <div class="carousel__item">
+        <img src="https://drive.google.com/uc?id=1H4VY26ahympGRMMvITX0Vx1P8EnDZvAV" alt="">
+      </div>
+      <div class="carousel__item carousel__item--cloned">
+        <img src="https://drive.google.com/uc?id=1frPDYjWJaOu2gs0nYXavljqiLyBomvsO" alt="">
+      </div>
+    </div>
+    <button class="carousel__button carousel__button--prev">
+      <i class="fas fa-arrow-left" id="prevBtn"></i>
+    </button>
+    <button class="carousel__button carousel__button--next">
+      <i class="fas fa-arrow-left" id="nextBtn"></i>
+    </button>
+    <ul class="carousel__dots">
+      <li class="slide-active">
+        <button>
+          1
+        </button>
+      </li>
+      <li class="">
+        <button>2</button>
+      </li>
+      <li class="">
+        <button>3</button>
+      </li>
+      <li class="">
+        <button>4</button>
+      </li>
+    </ul>
+  </div>
+</div>-->
+
+
+   <!--<div class="container-2">
+      <div class="gallery">
+          <figure class="gallery__item gallery__item--1">
+              <img src="../pic.png/gimdog_brand_logo_banner_1.png" alt="Gallery image 1" class="gallery__img">
+          </figure>
+          <figure class="gallery__item gallery__item--2">
+              <img src="../pic.png/Himalayan_Dog_Chew_logo_-_Copy_1.png" alt="Gallery image 2" class="gallery__img">
+          </figure>
+          <figure class="gallery__item gallery__item--3">
+              <img src="../pic.png/Walkin-Wheels-2017.png" alt="Gallery image 3" class="gallery__img">
+          </figure>
+          <figure class="gallery__item gallery__item--4">
+              <img src="../pic.png/Nupro_1.png" alt="Gallery image 4" class="gallery__img">
+          </figure>
+          <figure class="gallery__item gallery__item--5">
+              <img src="../pic.png/vet.png" alt="Gallery image 5" class="gallery__img">
+          </figure>
+          <figure class="gallery__item gallery__item--6">
+              <img src="../pic.png/ww.gif" alt="Gallery image 6" class="gallery__img">
+          </figure>
+      </div>
+  </div>-->
+
+  <div class="fifth-child" style="background-color: white;">
+
+ <script src="./script.js"></script>
+</body>
+</html>

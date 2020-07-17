@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قطط</title>
+<link rel="stylesheet" href="style.css">
+<style>.cat{ background-image: url(../pic.png/cat_1.png);
+    background-repeat: no-repeat; 
+  height: 425px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  
+  
+  }
+  .row{
+    height: 450px;
+    background-color: #90be6d;
+    display: flex;
+    flex-direction:row ;
+    
+    justify-content: space-around;
+    align-items: center;
+    }
+   .tooo{
+     background-color: black;
+     height: 500px;
+   }
+   .slide-right {
+	-webkit-animation: slide-right 13s cubic-bezier(0.250, 0.460, 0.450, 0.940) NaNs infinite both;
+	        animation: slide-right 13s cubic-bezier(0.250, 0.460, 0.450, 0.940) NaNs infinite both;
+}
+   
+
+
+ @-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+section{
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  background-color: #90be6d;
+  overflow: hidden;
+}
+
+section .wave{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url(../pic.png/wave.png);
+  background-size: 1000px 100px;
+}
+
+
+section .wave.wave1{
+  animation: animate 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+@keyframes animate{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: 1000px;
+  }
+}
+section .wave2{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url(../pic.png/wave.png);
+  background-size: 1000px 100px;
+}
+section .wave.wave2{
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+@keyframes animate2{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: -1000px;
+  }
+}
+section .wave3{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url(../pic.png/wave.png);
+  background-size: 1000px 100px;
+}
+section .wave.wave3{
+  animation: animate3 15s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+@keyframes animate3{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: -1000px;
+  }
+}
+
+/*-------------------------------------*/
+
+.sec{
+  position: relative;
+  width: 100%;
+  height: 12vh;
+
+  overflow: hidden;
+}
+
+.sec .wave9{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url(../pic.png/wave.png);
+  background-size: 1000px 100px;
+}
+
+.sec .wave4{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url(../pic.png/wave\ -\ Copy.png);
+  background-size: 1000px 100px;
+}
+
+
+
+
+.sec .wave9.wave4{
+  animation: animate 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+@keyframes animate{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: 1000px;
+  }
+}
+.sec .wave5{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url(../pic.png/wave\ -\ Copy.png);
+  background-size: 1000px 100px;
+}
+.sec .wave9.wave5{
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+@keyframes animate2{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: -1000px;
+  }
+}
+.sec .wave6{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url(../pic.png/wave\ -\ Copy.png);
+  background-size: 1000px 100px;
+}
+.sec .wave9.wave6{
+  animation: animate3 15s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+@keyframes animate3{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: -1000px;
+  }
+}
+
+  </style>
+   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cont" >
+      
+        <div style="display: flex;background-color: #eae2b7;" class="header">
+        
+         
+             <div style="display: flex;align-items: center;"><img class="logo" src="../pic.png/logo.png" alt=""></div> 
+            
+              <div style="display: flex;">
+                <div class="wrap">
+                    <div class="search">
+                       <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                       <button type="submit" class="searchButton">
+                         <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                 </div>
+                  <ul class="links">
+                    <li><a href=""><span>مدونه</span></a></li>
+                    <li><a href="../pro/p4.html"><span>قطط</span></a> </li>
+                    <li><a href="../pro/p3.html"><span>كلاب</span></a></li>
+                  
+                    <li><a href="../pro/p2.html"><span>خدمات</span></a></li>
+                    <li><a href="../pro/p1.html"><span>الرئيسيه</span></a></li>
+                      
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="cat">
+            <div  style=" font-size:75px;font-weight: 600; margin-top: 100px;">كل ما تحتاجه لقطتك </div>
+          </div>
+            
+          <div>
+            
+            <section class="sec">
+            
+              <div class="wave9 wave4"></div>
+              <div class="wave9 wave5"></div>
+              <div class="wave9 wave6"></div>
+              
+            </section>
+            <div class="slide-right" style="text-align: center;font-size: 40px;font-weight: 600;padding-top: 30px;background-color: #90be6d;"> افضل متجر للقطط</div>
+              <div class="row">
+               
+                
+                <div class="col-md-4">
+                  <div class="single-portfolio">
+                    <img src="../pic.png/petco.png" alt="" class="portfolio-img" width="500px">
+                    <div class="portfolio-text">
+                      <h3>PETCO</h3>
+                      <a href="https://www.petco.com/shop/en/petcostore" style="text-decoration: none;"><p>اضغط لزياره موقعهم<p></a> 
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          
+          </div>
+          <section>
+            
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+          </section>
+<div style="height: 500px;background: linear-gradient(white,#90be6d, white);"></div>
+    <div class="fifth-child" style="background-color: white;">
+        
+</body>
+</html>
