@@ -3,180 +3,398 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>مدونه</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- <div class="container">
-	
-        <input type="radio" id="i1" name="images" checked />
-        <input type="radio" id="i2" name="images" />
-        <input type="radio" id="i3" name="images" />
-        <input type="radio" id="i4" name="images" />
-        <input type="radio" id="i5" name="images" />	
-        
-        <div class="slide_img" id="one">			
-                
-                <img src="http://www.bhmpics.com/wallpapers/little_pony_art-800x480.jpg">
-                
-                    <label class="prev" for="i5"><span>&#x2039;</span></label>
-                    <label class="next" for="i2"><span>&#x203a;</span></label>	
-            
-        </div>
-        
-        <div class="slide_img" id="two">
-            
-                <img src="https://preview.ibb.co/e5OShF/cropped_800_480_111290.jpg " >
-                
-                    <label class="prev" for="i1"><span>&#x2039;</span></label>
-                    <label class="next" for="i3"><span>&#x203a;</span></label>
-            
-        </div>
-                
-        <div class="slide_img" id="three">
-                <img src="http://wallpaperswide.com/download/up_house-wallpaper-1280x800.jpg">	
-                
-                    <label class="prev" for="i2"><span>&#x2039;</span></label>
-                    <label class="next" for="i4"><span>&#x203a;</span></label>
-        </div>
-    
-        <div class="slide_img" id="four">
-                <img src="http://wallpaperswide.com/download/big_hero_6_baymax-wallpaper-1152x720.jpg">	
-                
-                    <label class="prev" for="i3"><span>&#x2039;</span></label>
-                    <label class="next" for="i5"><span>&#x203a;</span></label>
-        </div>
-    
-        <div class="slide_img" id="five">
-                <img src="http://www.wallpapereast.com/static/images/toys-wallpaper-hd-16339-17046-hd-wallpapers.jpg">	
-                
-                    <label class="prev" for="i4"><span>&#x2039;</span></label>
-                    <label class="next" for="i1"><span>&#x203a;</span></label>
-    
-        </div>
-    
-        <div id="nav_slide">
-            <label for="i1" class="dots" id="dot1"></label>
-            <label for="i2" class="dots" id="dot2"></label>
-            <label for="i3" class="dots" id="dot3"></label>
-            <label for="i4" class="dots" id="dot4"></label>
-            <label for="i5" class="dots" id="dot5"></label>
-        </div>
-            
-    </div>
-    
-    <div class="fifth-child"></div>
-    <style>* {
+           
+    <style>
+      .co {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 200px;
+    height: 460px;
+  }
   
+  .co:hover {
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+    ;
+  }
+      * {
         box-sizing: border-box;
       }
       
+      /* Add a gray background color with some padding */
       body {
-        background-color: rgb(211, 120, 120);
+        
+        background: white;
+       
       }
-      .demo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-      .carousel__container {
-        position: relative;
-        width: 500px;
-        max-width: 100%;
-        margin: auto;
-        padding-bottom: 20px;
-        overflow: hidden;
-        background-color: rgb(226, 204, 226);
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.685);
-      }
-      .carousel__slide {
-        display: flex;
-        align-items: center;
-      }
-      .carousel__item {
-        flex: 0 0 100%;
+      
+      /* Header/Blog Title */
+      .hea {
+        padding: 30px;
+        font-size: 40px;
         text-align: center;
-        padding: 15px;
+        background: white;
       }
-      .carousel__slide img {
+      
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {   
+        float: left;
+        width: 75%;
+      }
+      
+      /* Right column */
+     
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
         width: 100%;
-        pointer-events: none;
+        padding: 20px;
       }
-      #prevBtn,
-      #nextBtn {
-        color: white;
-        font-size: 15px;
-      }
-      .carousel__button {
-        position: absolute;
-        width: 30px;
-        height: 40px;
-        top: 50%;
-        transform: translate(0, -50%);
-        background-color: black;
-        outline: 0;
-        border: none;
-        cursor: pointer;
-      }
-      .carousel__button--prev {
-        left: 0;
-      }
-      .carousel__button--next {
-        right: 0;
-        transform: rotateY(180deg) translate(0, -50%);
-      }
-      .carousel__dots {
-        display: flex;
-        flex: 0 0 100%;
-        justify-content: center;
-        align-items: center;
       
-        list-style: none;
+      /* Add a card effect for articles */
+      .car {
+         background-color: white;
+         padding: 20px;
+         margin-top: 20px;
       }
-      .carousel__dots > li {
-        width: 10px;
-        height: 10px;
-        margin: 0 10px;
-        padding: 0;
       
-        cursor: pointer;
-      }
-      .carousel__dots > li > button {
-        position: relative;
-        font-size: 0;
-        line-height: 0;
-      
-        display: block;
-      
-        width: 10px;
-        height: 10px;
-      
-        cursor: pointer;
-      
-        color: transparent;
-        border: none;
-        outline: 0;
-        background-color: transparent;
-      }
-      .carousel__dots > li > button::before {
-        opacity: 0.5;
-        background-color: black;
+      /* Clear floats after the columns */
+      .roow:after {
         content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-      }
-      .carousel__dots > li.slide-active > button::before {
-        opacity: 0.75;
+        display: table;
+        clear: both;
       }
       
-      </style>*/
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
       
-</body>
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {   
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      #slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+.fling-minislide {width:1000px; height:160px; overflow:hidden; position:relative; }
+.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 950px; height: 270px;}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(3){animation-delay:0s;}
+.fling-minislide img:nth-child(2){animation-delay:5s;}
+.fling-minislide img:nth-child(1){animation-delay:10s;}
+
+.fling-minislide {widows: 950px;; height:0px; padding-bottom: 50%; overflow:hidden; position:relative;margin-left: 50px;}
+
+
+
+
+
+
+.p{height: 525px;background-color: white;display: flex;flex-direction: row; ;width: 100%;}
+
+.onee{
+ 
+  background-color: #f0efeb;
+  height: 500px;width: 78%;
+  margin-left: 32px;
+  margin-right: 30px;
+  justify-content: center;
+  flex-direction: column;
+  
+  
+}
+
+
+.twoo{
+  display: flex;background-color: #ced4da;
+  height: 500px;
+  width:200px;
+  
+  flex-direction: row;margin-right: 45px;
+  justify-content: space-between;
+}
+
+
+
+.tablink {
+  background-color: #555;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 50%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 50px;
+  text-align: center;
+  
+}
+
+#London {background-color:#f0efeb;height: 750px;}
+#Paris {background-color:#6c757d;height: 750px;}
+
+      </style>
+</head>
+<body>
+
+  
+  <div class="cont" >
+      
+    <div style="display: flex;background-color: #eae2b7;" class="header">
+    
+     
+         <div style="display: flex;align-items: center;"><img class="logo" src="./logo.png" alt=""></div> 
+        
+          <div style="display: flex;">
+            <div class="wrap">
+              <form action="./p3.html" target="_blank" method="GET">
+                <form action="./p4.html" target="_blank" method="GET">
+                  <form action="./p2.html" target="_blank" method="GET">
+                    <form action="./p6.html" target="_blank" method="GET">
+                <div class="search">
+                   <input type="text" class="searchTerm" placeholder="ما الذي تبحث عنه؟">
+                   <button type="submit" class="searchButton">
+                     <i class="fa fa-search"></i>
+                  </button>
+                </div>
+             </div>
+          </form>
+        </form>
+      </form>
+    </form>
+              <ul class="links">
+                <li><a href="./p6.html"><span>مدونه</span></a></li>
+                <li><a href="./p4.html"><span>قطط</span></a> </li>
+                <li><a href="./p3.html"><span>كلاب</span></a></li>
+                <li><a href="./p2.html"><span>خدمات</span></a></li>
+                <li><a href="./index.html"><span>الرئيسيه</span></a></li>
+                  
+                
+            </ul>
+        </div>
+    </div>
+
+
+<div style="display: flex;height: 310px;margin: 20px;width:95%;">
+<div style="margin-left: 15px; width: 100%;height: 300px;background-image: url(./all.png);background-repeat: no-repeat;text-align: center;background-color: #c9e0ea;background-position-y: -50px ;"><h1 style="text-align: center;font-size:60px;margin-top: 120px;">مرحبا بكم في مدونتنا</h1></div>
+  
+</div>
+
+
+
+
+
+</div>
+<div class="p" style="height: 450px;"> 
+
+
+<div class="onee" style="height: 425px;">
+  <div id="c6" style="text-align: center;font-size: 30px;font-weight: 300;padding: 30px;">تعرف على افضل انواع الاطعمه </div>
+  
+    
+    <div class="fling-minislide " style="margin-top: 0px;">
+      <img src="./cfo.png" alt="Slide 4" />
+      <img src="./max.png" alt="Slide 3" />
+      <img src="./max2.png" alt="Slide 2" />
+  
+  </div>
+</div>
+
+
+<div class="twoo" style="height: 425px;display: flex;flex-direction: column;">
+<h3 style="text-align: center;">محتويات الصفحه</h3>
+<a href="#c1" style="text-decoration: none;"><p style="font-size: 15px;font-weight: 500;text-align: center;">معلومات مفيده للمربيين</p>
+</a>
+
+<a href="#c6" style="text-decoration: none;" ><p   style="font-size: 15px;font-weight: 500;text-align: center;">افضل الاطعمه للقطط</p></a>
+<a href="#c2" style="text-decoration: none;"><p style="font-size: 15px;font-weight: 500;text-align: center;">اطعمه ضاره للقطط</p></a>
+<a href="#c3" style="text-decoration: none;"><p style="font-size: 15px;font-weight: 500;text-align: center;">اعرف نفسك قبل التبني</p></a>
+
+<a href="#c4" style="text-decoration: none;"><p style="font-size: 15px;font-weight: 500;text-align: center;">الاسعافات الاوليه للكلاب</p></a>
+<a href="#c5" style="text-decoration: none;"><p style="font-size: 15px;font-weight: 500;text-align: center;">الاسعافات الاوليه للقطط</p></a>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+<div class="p">
+
+
+  <div class="onee" style="display: flex;align-items: center;">
+    <div style="text-align: center;font-size: 30px;font-weight: 300;padding: 30px;"  id="c1"> تعرف على اهم المعلومات المفيده للمربيين </div>
+  
+    <iframe style="display: flex;justify-content: center;" width="560" height="315" src="https://www.youtube.com/embed/VJGlsYHI9cU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="c4" style="text-align: center;font-size: 15;font-weight: 300;">تعلم معنا الاسعافات الاوليه للكلاب </div>
+
+
+  </div>
+  <div class="twoo" style="display: flex;flex-direction: column;align-items: center;" >
+    <div style="text-align: center;font-size: 12px;font-weight: 300;" id="c5">اساعافات الاوليه للقط </div>
+
+    <iframe width="150px" height="100px" src="https://www.youtube.com/embed/v_wsV8ADwvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div style="text-align: center;font-size: 12px;font-weight: 300;">علامات تدل على ان كلبك مريض </div>
+
+    <iframe width="150" height="100px" src="https://www.youtube.com/embed/NDKOgGcQZ48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <div style="text-align: center;font-size: 12px;font-weight: 300;">اطعمه ضاره بالقطط </div>
+
+    <iframe width="150" height="100px" src="https://www.youtube.com/embed/e3F3nzkzRnE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div style="text-align: center;font-size: 12px;font-weight: 300;">كيف تتصرف بحال اختناق قطك </div>
+
+    <iframe style="padding: 5px;" width="150px" height="100px" src="https://www.youtube.com/embed/OgjTGvzi7GU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+<div class="p">
+
+<div class="onee" style="width: 94.5%;">
+  <div id="London" class="tabcontent">
+    <h1>اعرف نفسك قبل التبني</h1>
+    <h3>الحساسية</h3>
+    <p>عمل اختبار حساسية أنت وعائلتك لدى أي دكتور مختصّ لتعرف إذا كنتم تعانون من حساسية تجاه القطط أم لا</p>
+    <h3>الإنتقال</h3>
+    <p>لو كنت كثير التنقل أو السفر أو دوامك طويل لايجب عليك اقتناء قط</p>
+    <h3>القدرة المادية</h3>
+    <p>جب معرفة التكلفة المتوقعة قبل إحضار أي حيوان جديد إلى العائلة، وما إذا كان دخلك كافٍ لسدّ كل احتياجاته</p>
+ <img src="./mony.png" alt="" width="600px">
+ 
+ 
+  </div>
+
+
+
+
+  <div id="Paris" class="tabcontent" >
+
+    <h1 >تغذية القطط والكلاب</h1>
+   <h3>امثله على الاغذيه المضره</h3>
+   <div style="display: flex;flex-direction: row;justify-content: space-evenly;">
+   <div class="co">
+    <img src="./milk.png" alt="Avatar" style="width:200px">
+    <p>لحليب والزبادي ومشتقاته، حتى لو خالي من اللاكتوز لأن الحليب ومشتقاته فيها بروتينات مضرة، حتى لو حليب مخصص للقطط/للكلاب لأنه في الاخير من حليب الماعز والبقر وغيرها من المواشي فيظل غير مناسب للقطط </p>
+      
+  </div>
+  <div class="co">
+    <img src="./rgg.png" alt="Avatar" style="width:200px">
+ <p>البيض النيئ يتسبب فى اصابته بخطر جرثومى
+
+  لا ينبغى أن يأكل قطك البيض النيئ، لتجنب إصابته بأى خطر جرثومى، مثل مخاطر السالمونيلا أو القولونية، وكلاهما يمكن أن يتسبب فى مشاكل خطيرة للحيوانات الأليفة،كما أن بياض البيض يمكن أن يوقف امتصاص فيتامين "ب".</p>      
+  </div>
+   
+  <div class="co">
+    <img src="./cho.png" alt="Avatar" style="width:200px">
+<p>الشوكلاتة تعتبر الشوكلاتة من الأطعمة التي ينبغي تجنب إطعامها للقطط, نظرا لإحتوائها على مادة الثيوبرومين السامة التي قد تضر بهم</p>      
+  </div>
+</div>
+   
+  
+   
+    <p>
+
+    </p>
+   
+    
+
+  </div>
+  
+  
+  
+  <button class="tablink" onclick="openCity('London', this, '#f0efeb')" id="defaultOpen" id="c3">اعرف نفسك قبل التبني</button>
+  <button class="tablink" onclick="openCity('Paris', this, '#6c757d')" id="c2">اطعمه ضاره للقطط</button>
+ 
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+    
+      <!--
+        </div>
+     
+       
+    <div class="footer " style="background-image: url(./gra.png);">
+      <h2>.</h2>
+    </div>
+    
+        
+        
+        
+        style="background-image: url(./all.png);background-repeat: no-repeat;background-position-y: -30px;padding: 115px;margin: 10px;background-position-x: 60px;background-color: #c9e0ea;color: black;">مرحبا بكم في مدونتنا</h2>  -->
+     
+      
+    
+      
+     
+      
+     
+          <div class="fifth-child" style="margin-top: 300px;background-color: white;"></div>
+       
+
+  
+     
+
+      <script src="./script.js"></script>
+     
 </html>

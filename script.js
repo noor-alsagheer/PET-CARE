@@ -1,4 +1,60 @@
-let parellax = document.querySelectorAll("[data-speed]")
+
+
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*let parellax = document.querySelectorAll("[data-speed]")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 window.addEventListener("scroll",myscrollfunction);
 
 function myscrollfunction(){
@@ -15,18 +71,9 @@ for(let p_element of parellax){
 }
 
 
-}  /*<div class="container">
-          <h1>Parallax</h1>
-          <h2>faster</h2>
-          <h2>easier</h2>
-          <h2>sassier</h2>
-          <img src="../pic.png/cat1.png" alt=" " >
-          <img src="../pic.png/hea.png" alt=" " width="250px">
-          <img src="http://placekitten.com/300/400" alt=" " />
-         
-        </div>*/
+}  */
 // Carousel
-var carouselSlide = document.querySelector(".carousel__slide");
+/*var carouselSlide = document.querySelector(".carousel__slide");
 var carouselItems = document.querySelectorAll(".carousel__item");
 var carouselDots = document.querySelectorAll(".carousel__dots > li");
 
@@ -119,4 +166,4 @@ carouselDots.forEach((dot, index) => {
   dot_button.addEventListener("click", function(e) {
     counter.setValue(index + 1);
   });
-});
+});*/

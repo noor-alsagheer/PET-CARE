@@ -78,7 +78,7 @@ body{
  
 }
 #slides .slide_1 {
-  background-image: url(../pic.png/Pet-Grooming-1.png);
+  background-image: url(./Pet-Grooming-1.png);
 background-repeat: no-repeat;
 background-size: 1200px;
 background-position-y: -100px;
@@ -86,23 +86,23 @@ font-size: xx-large;
 
 }
 #slides .slide_2 {
-  background-image: url(../pic.png/vet.png);
+  background-image: url(./vet.png);
   background-repeat: no-repeat;
   background-size: 1200px;
   background-position-y: -200px;font-size: xx-large;text-decoration: none;}
 #slides .slide_3 {
-  background-image: url(../pic.png/food.png);
+  background-image: url(./food.png);
   background-repeat: no-repeat;
   background-size: 1200px;
   font-size: xx-large;
 
 }
 #slides .slide_4 {
-  background-image: url(../pic.png/cfo.png);
+  background-image: url(./Game-cat.png);
   background-repeat: no-repeat;
   background-size: 1200px;
   font-size: xx-large;
- 
+  background-position-y: -200px
 }
 #controls {
   margin: -180px 0 0 0;
@@ -305,7 +305,7 @@ span{background-color:#eae2b7 ;}
     background-repeat: no-repeat;
     background-size: 100% 400px;
   text-align: center;
-background-image: url(../pic.png/grass-7.png);
+background-image: url(./grass-7.png);
 }
   
   /*page33333333333333333333333333333*/
@@ -342,7 +342,7 @@ background-image: url(../pic.png/grass-7.png);
     
     }
     .portfolio-text{
-    font-size: 25px;
+    font-size: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     bottom: 0;
@@ -359,9 +359,10 @@ background-image: url(../pic.png/grass-7.png);
     
     .portfolio-text p{
     text-align: justify;
-    font-weight: 900;
+    font-weight: 700;
+    
     color: black;
-    font-size: 30px;
+    font-size: 20px;
     
     }
     .single-portfolio:hover .portfolio-text{
